@@ -9,7 +9,7 @@ model.add(BatchNormalization())
 model.add(Conv2D(32, kernel_size=(3, 3), activation='relu', padding="same",
         kernel_initializer='he_normal'))
 model.add(BatchNormalization())
-model.add(Conv2D(32, kernel_size=(5,5), strides=(2, 2), padding="same",
+model.add(Conv2D(32, kernel_size=(5,5), strides=(2, 2), activation='relu', padding="same",
         kernel_initializer='he_normal'))
 model.add(BatchNormalization())
 model.add(Dropout(0.4))
